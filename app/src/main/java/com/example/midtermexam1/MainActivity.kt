@@ -49,6 +49,9 @@ class MainActivity : ComponentActivity() {
     }override fun onPause() {
         super.onPause()
         Toast.makeText(applicationContext, "Activity: onPause()", Toast.LENGTH_SHORT).show()
+    }override fun onStop() {
+        super.onStop()
+        Toast.makeText(applicationContext, "Activity: onStop()", Toast.LENGTH_SHORT).show()
     }}
 
 
