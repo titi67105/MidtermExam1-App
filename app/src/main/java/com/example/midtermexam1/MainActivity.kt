@@ -43,6 +43,9 @@ class MainActivity : ComponentActivity() {
     override fun onStart() {
         super.onStart()
         Toast.makeText(applicationContext, "Activity: onStart()", Toast.LENGTH_SHORT).show()
+    }override fun onResume() {
+        super.onResume()
+        Toast.makeText(applicationContext, "Activity: onResume()", Toast.LENGTH_SHORT).show()
     }}
 
 
