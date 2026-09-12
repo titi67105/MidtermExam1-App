@@ -40,7 +40,11 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
-}
+    override fun onStart() {
+        super.onStart()
+        Toast.makeText(applicationContext, "Activity: onStart()", Toast.LENGTH_SHORT).show()
+    }}
+
 
 @Composable
 fun ProfileScreen() {
